@@ -1,0 +1,16 @@
+{
+  "contract": {
+    "max_tag_length": 96,
+    "tag_pattern": "^[a-z0-9][a-z0-9_.-]{0,95}$",
+    "utm_keys": [
+      "utm_source",
+      "utm_medium",
+      "utm_campaign"
+    ],
+    "version": 3
+  },
+  "producer": "AceDataCloud/PlatformBackend",
+  "profile": "acquisition",
+  "sha256": "bb0f9a8d65d55cba939c83fd8d2d8d5e8e2482a1d759c1f5c2630dd8c65af2f5",
+  "source_sha": "3335be115e62a0a1a9cd08895263e2328954b795"
+}

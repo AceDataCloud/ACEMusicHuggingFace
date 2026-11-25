@@ -1,0 +1,28 @@
+{
+  "repository": "https://github.com/AceDataCloud/SunoHuggingFace",
+  "revision": "8aebab46ef5b7e099fcbb2599758dbc90a2b1292",
+  "archive_sha256": "ebfafde2fa72664413217c26ce41914fcb40f5c99e16f8ff24c81a7ebf258923",
+  "files": [
+    "AGENTS.md",
+    "LICENSE",
+    "PRIVACY.md",
+    "README.md",
+    "README_zh_Hans.md",
+    "assets/create-api-key-en.png",
+    "assets/get-api-key-en.png",
+    "client.mjs",
+    "docs/ACCOUNT_AND_RELEASE.md",
+    "docs/TOP5_PUBLISHING.md",
+    "docs/TOP5_VALIDATION.md",
+    "docs/asset-sources.json",
+    "docs/attribution-contract.json",
+    "docs/top5-20261018/backend-openapi-sources.json",
+    "docs/top5-20261018/brand-policy-review.json",
+    "index.html",
+    "studio/acemusic.mjs",
+    "studio/app.mjs",
+    "studio/runtime.mjs",
+    "studio/services.mjs",
+    "styles.css"
+  ]
+}

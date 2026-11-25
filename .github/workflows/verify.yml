@@ -1,0 +1,27 @@
+name: Verify standalone Space
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read canonical commit
+        id: source
+        run: python3 -c 'import json, os; print("revision=" + json.load(open("SOURCE.json"))["revision"], file=open(os.environ["GITHUB_OUTPUT"], "a"))'
+      - uses: actions/checkout@v4
+        with:
+          repository: AceDataCloud/SunoHuggingFace
+          ref: ${{ steps.source.outputs.revision }}
+          path: canonical
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Rebuild and compare the application
+        run: python3 scripts/sync_space.py canonical
+      - uses: actions/upload-artifact@v4
+        with:
+          name: acemusic-static-space
+          path: artifacts/acemusic-static-space.zip
+          if-no-files-found: error
