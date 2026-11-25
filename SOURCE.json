@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/AceDataCloud/SunoHuggingFace",
-  "revision": "cb7e90e9f596c9260657b314818000290dced1da",
-  "archive_sha256": "323e615981754ed055b5e0f5e381d21a6049ea2bfb0c20524d32e4d97417e2c5",
+  "revision": "8aebab46ef5b7e099fcbb2599758dbc90a2b1292",
+  "archive_sha256": "ebfafde2fa72664413217c26ce41914fcb40f5c99e16f8ff24c81a7ebf258923",
   "files": [
     "AGENTS.md",
     "LICENSE",
